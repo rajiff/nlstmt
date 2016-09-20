@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Natural Lang demo</title>
+</head>
+
+<body ng-app='nlstmt'>
+    <div ng-controller='hostctrl'>
+        <form ng-submit="save()">
+            <div>
+                I have completed my
+                <stmtinput field='title' enter='updateField(field, value)'></stmtinput>
+                in the year
+                <stmtinput field='batch' enter='updateField(field, value)'></stmtinput>
+                from
+                <stmtinput field='institute' enter='updateField(field, value)'></stmtinput>
+                of
+                <stmtinput field='location' enter='updateField(field, value)'></stmtinput>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+        <pre>{{fieldData | json }}</pre>
+    </div>
+</body>
+<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="nlstmt.js"></script>
+<script type="text/javascript" src="hostctrl.js"></script>
+<script type="text/javascript" src="stmtinput.js"></script>
+
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "nlstmt",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "angularjs#^1.5.8"
+  }
+}
